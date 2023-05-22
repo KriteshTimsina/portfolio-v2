@@ -1,5 +1,4 @@
 import {
-  AiFillLinkedin,
   AiFillGithub,
   AiFillTwitterCircle,
   AiFillYoutube,
@@ -10,7 +9,7 @@ const Home = () => {
   return (
     <div className=" flex flex-col  sm:flex-row items-start sm:items-center justify-between gap-3">
       <section className="flex flex-col gap-1 order-2 sm:order-1 px-5">
-        <h1>Namaste, I'm</h1>
+        <h1 className="">Namaste, I'm</h1>
         <h1 className="text-3xl font-extrabold">
           <span className="text-primary"> Kritesh</span> Timsina
         </h1>

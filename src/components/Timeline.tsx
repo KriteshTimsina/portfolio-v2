@@ -1,4 +1,3 @@
-import React from "react";
 import { BsCalendarEvent } from "react-icons/bs";
 const Timeline = () => {
   return (
