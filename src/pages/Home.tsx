@@ -1,8 +1,4 @@
-import {
-  AiFillGithub,
-  AiFillTwitterCircle,
-  AiFillYoutube,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram, AiFillYoutube } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
 const Home = () => {
@@ -22,17 +18,33 @@ const Home = () => {
             }}
           />
         </div>
-        <div className="flex gap-2 mt-2 text-xl">
-          <FaLinkedinIn className="hover:text-[#0077b5] transition-all" />
-          <AiFillGithub className="hover:bg-slate-900 transition-all" />
-          <AiFillTwitterCircle className="hover:text-[#1DA1F2] transition-all" />
-          <AiFillYoutube className="hover:text-[#c4302b] transition-all" />
+        <div className="flex gap-2 mt-2 text-xl cursor-pointer">
+          <a href="https://www.linkedin.com/in/kriteshtimsina/" target="_blank">
+            <FaLinkedinIn className="hover:text-[#0077b5] transition-all" />
+          </a>
+          <a href="https://github.com/KriteshTimsina" target="_blank">
+            <AiFillGithub className="hover:text-gray-300 transition-all" />
+          </a>
+          <a href="https://www.instagram.com/kritstims/" target="_blank">
+            <AiFillInstagram className="hover:text-[#D61861] transition-all" />
+          </a>
+          <a href="https://www.youtube.com/@kritstims" target="_blank">
+            <AiFillYoutube className="hover:text-[#c4302b] transition-all" />
+          </a>
         </div>
+        <a
+          href="/src/assets/resume.pdf"
+          target="_blank"
+          className=" mt-2 bg-primary w-fit p-1 rounded-md hover:bg-yellow-300 hover:text-black transition-color duration-300"
+          download
+        >
+          Download resume
+        </a>
       </section>
       <section className="order-1 sm:order-2">
         <img
           className="w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] rounded-full hover:shadow-md hover:shadow-primary hover:grayscale-[50%] hover:border-primary hover:border-[2px] transition-all duration-75 "
-          src="./src/assets/kritesh.jpg"
+          src="/src/assets/kritesh.jpg"
           title="Kritesh Timsina"
           alt="Kritesh Timsina"
         />

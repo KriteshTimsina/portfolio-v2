@@ -1,12 +1,13 @@
 import Header from "./components/Header";
-import { useTheme } from "./contexts/ThemeContext";
+// import { useTheme } from "./contexts/ThemeContext";
 import About from "./pages/About";
 import Education from "./pages/Education";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
 
 function App() {
-  const { isDarkTheme } = useTheme();
+  // const { isDarkTheme } = useTheme();
   return (
     <div className=" py-5 bg-background font-jetbrains  text-white min-h-screen">
       <Header />
@@ -15,6 +16,7 @@ function App() {
         <About />
         <Education />
         <Skills />
+        <Projects />
       </div>
     </div>
   );

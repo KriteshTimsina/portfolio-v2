@@ -8,7 +8,11 @@ const Header = () => {
         Kritesh <span className="text-primary">Timsina</span>
       </h2>
       <nav className="cursor-pointer">
-        <DarkModeSwitch className="text-primary" checked={theme.isDarkTheme} />
+        <DarkModeSwitch
+          className="text-primary"
+          checked={theme.isDarkTheme}
+          onChange={() => {}}
+        />
       </nav>
     </header>
   );

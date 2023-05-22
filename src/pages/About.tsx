@@ -7,13 +7,20 @@ const About = () => {
         <h1>About</h1>
       </section>
       <section className="px-5 text-typography">
-        <p>
+        <p className="mb-3 selection:bg-yellow-300">
           A highly motivated and eager student of B.Sc CSIT 8th semester with a
           passion for learning new technologies.I enjoy developing web
           applications and, in my free time, I like to contribute to open-source
           projects. When I'm not coding or studying, I'm usually playing guitar
-          and making .
+          and making music.
         </p>
+        <a
+          href="https://www.youtube.com/@kritstims"
+          target="_blank"
+          className=" bg-primary text-white w-fit p-2 rounded-md hover:bg-yellow-300 hover:text-black transition-color duration-300"
+        >
+          Listen to my music
+        </a>
       </section>
     </div>
   );

@@ -11,17 +11,17 @@ const Education = () => {
         <Timeline />
         <div className="flex flex-col gap-5">
           <div>
-            <h1 className="text-sm text-typography">2017-2020</h1>
+            <h1 className="text-sm text-typography">2016-2018</h1>
             <div>
               <h1 className="font-semibold">Academic Degree</h1>
               <p className="text-sm font-semibold text-typography">
                 +2 Science
               </p>
-              <p className="text-sm text-typography">Kanchanjunga H.S/E.S</p>
+              <p className="text-sm text-typography">Kanchanjunga H.S.E.S</p>
             </div>
           </div>
           <div>
-            <h1 className="text-sm text-typography">2020-present</h1>
+            <h1 className="text-sm text-typography">2018-present</h1>
             <div>
               <h1 className="font-semibold">Bachelor's Degree</h1>
               <p className="text-sm font-semibold text-typography">
