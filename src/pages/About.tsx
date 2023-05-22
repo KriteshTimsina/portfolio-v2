@@ -17,7 +17,7 @@ const About = () => {
         <a
           href="https://www.youtube.com/@kritstims"
           target="_blank"
-          className=" bg-primary text-white w-fit p-2 rounded-md hover:bg-yellow-300 hover:text-black transition-color duration-300"
+          className=" bg-primary text-white w-fit p-2 rounded-md hover:bg-yellow-300 hover:text-black transition-color duration-300 hover:scale-105"
         >
           Listen to my music
         </a>

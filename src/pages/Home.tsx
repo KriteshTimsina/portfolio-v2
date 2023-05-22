@@ -1,6 +1,8 @@
 import { AiFillGithub, AiFillInstagram, AiFillYoutube } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
+import kritesh from "../assets/kritesh.jpg";
+import resume from "../assets/resume.pdf";
 const Home = () => {
   return (
     <div className=" flex flex-col  sm:flex-row items-start sm:items-center justify-between gap-3">
@@ -33,9 +35,9 @@ const Home = () => {
           </a>
         </div>
         <a
-          href="/src/assets/resume.pdf"
+          href={resume}
           target="_blank"
-          className=" mt-2 bg-primary w-fit p-1 rounded-md hover:bg-yellow-300 hover:text-black transition-color duration-300"
+          className=" mt-2 bg-primary w-fit p-1 rounded-md hover:bg-yellow-300 hover:text-black transition-color duration-300 hover:scale-105"
           download
         >
           Download resume
@@ -44,7 +46,7 @@ const Home = () => {
       <section className="order-1 sm:order-2">
         <img
           className="w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] rounded-full hover:shadow-md hover:shadow-primary hover:grayscale-[50%] hover:border-primary hover:border-[2px] transition-all duration-75 "
-          src="/src/assets/kritesh.jpg"
+          src={kritesh}
           title="Kritesh Timsina"
           alt="Kritesh Timsina"
         />
