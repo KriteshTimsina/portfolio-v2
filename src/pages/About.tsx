@@ -1,4 +1,5 @@
 import { RxInfoCircled } from "react-icons/rx";
+import CallToAction from "../components/CallToAction";
 const About = () => {
   return (
     <div className="flex flex-col mt-10 gap-6">
@@ -14,13 +15,10 @@ const About = () => {
           projects. When I'm not coding or studying, I'm usually playing guitar
           and making music.
         </p>
-        <a
+        <CallToAction
           href="https://www.youtube.com/@kritstims"
-          target="_blank"
-          className=" bg-primary text-white w-fit p-2 rounded-md hover:bg-yellow-300 hover:text-black transition-color duration-300 hover:scale-105"
-        >
-          Listen to my music
-        </a>
+          title="Listen to my music"
+        />
       </section>
     </div>
   );
