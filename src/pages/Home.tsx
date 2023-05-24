@@ -27,7 +27,7 @@ const Home = () => {
           <CallToAction href={resume} title="Download CV" image={cvicon} />
           <CallToAction
             href="mailto:kriteshtimsina55@gmail.com"
-            title="Email me"
+            title="Say Hello"
             image={emailme}
           />
         </div>

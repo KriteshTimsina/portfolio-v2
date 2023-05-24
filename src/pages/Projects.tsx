@@ -1,7 +1,7 @@
 import { BsListTask } from "react-icons/bs";
 import { projectsData as projects } from "../utils/projectsData";
 import CallToAction from "../components/CallToAction";
-
+import sourcecode from "../assets/sourcecode.png";
 const Projects = () => {
   return (
     <div className="flex flex-col mt-10 gap-6">
@@ -9,7 +9,7 @@ const Projects = () => {
         <BsListTask className="text-blue-400" />
         <h1>Projects</h1>
       </section>
-      <section className="flex flex-col gap-5">
+      <section className="px-5 flex flex-col gap-5">
         {projects.map((project) => {
           return (
             <div key={project.id}>
@@ -29,9 +29,13 @@ const Projects = () => {
               <p className="text-typography">{project.description}</p>
               <div className="flex gap-3">
                 {project.github && (
-                  <CallToAction title="Github" href={project.github} />
+                  <CallToAction
+                    title="Source Code"
+                    href={project.github}
+                    image={sourcecode}
+                  />
                 )}
-                <CallToAction title="Visit Site" href={project.url} />
+                <CallToAction title="Visit Site🔗" href={project.url} />
               </div>
             </div>
           );
