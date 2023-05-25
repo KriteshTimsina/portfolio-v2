@@ -19,7 +19,7 @@ export const projectsData: IProjects = [
     image: "/src/assets/subhakaarya.png",
     url: "https://subhakaarya.com/",
     github: "",
-    techStacks: ["React js ●", "Tailwind css ●", "Django"],
+    techStacks: ["React ● ", " Tailwind css ●", " Django"],
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const projectsData: IProjects = [
     image: "",
     url: "https://sastobazaar.netlify.app",
     github: "https://github.com/KriteshTimsina/nestnepal-frontend-NestStore",
-    techStacks: ["React js ●", "Tailwind css ●", "Typescript"],
+    techStacks: ["React ●", " Tailwind css ●", " Typescript"],
   },
   {
     id: 3,
@@ -41,6 +41,6 @@ export const projectsData: IProjects = [
     image: "",
     url: "www.resumee.netlify.com",
     github: "",
-    techStacks: ["React js ●", "Tailwind css ●", "Typescript"],
+    techStacks: ["React ●", "Tailwind css ●", "Typescript"],
   },
 ];

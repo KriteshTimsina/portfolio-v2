@@ -17,10 +17,10 @@ const Projects = () => {
                 {project.icon}
                 {project.title}
               </h1>
-              <div className="flex text-typography font-bold">
+              <div className="flex text-typography font-bold mb-2">
                 {project.techStacks.map((tech) => {
                   return (
-                    <p className="mr-2" key={tech}>
+                    <p className="whitespace-nowrap mr-2" key={tech}>
                       {tech}
                     </p>
                   );

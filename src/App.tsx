@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import Header from "./components/Header";
 import { useTheme } from "./contexts/ThemeContext";
 import About from "./pages/About";
