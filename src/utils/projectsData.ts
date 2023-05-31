@@ -23,7 +23,7 @@ export const projectsData: IProjects = [
   },
   {
     id: 2,
-    title: "SastoBazaar",
+    title: "SastoBazaar (incomplete)",
     icon: "🛒",
     description:
       "E-commerce website build using react js and tailwind css. Added features such as authentication, add to cart, search for products, pagination and so on.",
@@ -34,13 +34,13 @@ export const projectsData: IProjects = [
   },
   {
     id: 3,
-    title: "Resumee",
-    icon: "📖",
+    title: "Music World",
+    icon: "🎵",
     description:
-      "Resume builder where user can fill up the from, select from list of resume and generate the resume as per their requirements. ",
+      "A simple and minimal music app that shows trending albums from genius api and search albums and their songs",
     image: "",
-    url: "www.resumee.netlify.com",
+    url: "https://musicsansar.vercel.app/",
     github: "",
-    techStacks: ["React ●", "Tailwind css ●", "Typescript"],
+    techStacks: ["Next js ●", "Tailwind css ●", "Typescript"],
   },
 ];
