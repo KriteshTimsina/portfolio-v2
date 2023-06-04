@@ -43,4 +43,14 @@ export const projectsData: IProjects = [
     github: "",
     techStacks: ["Next js ●", "Tailwind css ●", "Typescript"],
   },
+  {
+    id: 3,
+    title: "Expense Tracker",
+    icon: "📚",
+    description: "Expense tracker to track your income and expenses",
+    image: "",
+    url: "https://daytodayexpenses.netlify.app",
+    github: "https://github.com/KriteshTimsina/expense-tracker",
+    techStacks: ["React js ●", "Tailwind css ●", "Typescript"],
+  },
 ];
