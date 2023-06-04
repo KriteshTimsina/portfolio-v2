@@ -12,12 +12,12 @@ import { BsGit } from "react-icons/bs";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col  gap-6">
+    <div className="flex flex-col gap-6">
       <section className="flex items-center gap-2 text-3xl ">
         <GoLightBulb className="text-yellow-500 " />
         <h1>Skills</h1>
       </section>
-      <section className="px-5 items-center justify-start flex flex-wrap cursor-pointer gap-1  ">
+      <section className="flex flex-wrap items-center justify-start gap-1 px-5 cursor-pointer ">
         <AiFillHtml5
           title="Hypertext Markup Language"
           size={50}
@@ -50,7 +50,6 @@ const Skills = () => {
           className="text-[#C36291] "
         />
         <BsGit title="Git" size={50} className="text-[#E84D31]" />
-        <DiGithubBadge title="Github" size={60} />
       </section>
     </div>
   );

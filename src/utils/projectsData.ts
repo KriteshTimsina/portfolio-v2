@@ -37,7 +37,7 @@ export const projectsData: IProjects = [
     title: "Music World",
     icon: "🎵",
     description:
-      "A simple and minimal music app that shows trending albums from genius api and search albums and their songs",
+      "A simple and minimal music app that shows trending albums from genius api and search albums and their songs.",
     image: "",
     url: "https://musicsansar.vercel.app/",
     github: "",
