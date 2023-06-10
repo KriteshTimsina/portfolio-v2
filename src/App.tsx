@@ -3,6 +3,7 @@ import { useTheme } from "./contexts/ThemeContext";
 import About from "./pages/About";
 import Education from "./pages/Education";
 import Home from "./pages/Home";
+import ProjectPage from "./pages/ProjectPage";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 
@@ -11,14 +12,15 @@ function App() {
 
   return (
     <div className={`${theme.isDarkTheme ? "dark" : "light"}`}>
-      <div className=" py-5 bg-white dark:bg-background font-jetbrains text-black dark:text-white min-h-screen">
+      <div className="min-h-screen py-5 text-black bg-white dark:bg-background font-jetbrains dark:text-white">
         <Header />
         <div className="w-full px-5 md:px-0 md:w-[797px] mx-auto mt-[50px]">
           <Home />
           <About />
           <Education />
           <Skills />
-          <Projects />
+          {/* <Projects /> */}
+          <ProjectPage />
         </div>
       </div>
     </div>

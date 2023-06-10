@@ -7,6 +7,7 @@ type IProjects = {
   url: string;
   github: string;
   techStacks: string[];
+  category: string;
 }[];
 
 export const projectsData: IProjects = [
@@ -15,42 +16,45 @@ export const projectsData: IProjects = [
     icon: "💐",
     title: "Subhakaarya",
     description:
-      "Event management website that allows users to view and book services for the events. Specifically worked on the frontend part of the website, utilizing ReactJS and Tailwind CSS.",
+      "Event management website that allows users to view and book services for the events. Specifically worked on the frontend part of the website.",
     image: "/src/assets/subhakaarya.png",
     url: "https://subhakaarya.com/",
     github: "",
-    techStacks: ["React ● ", " Tailwind css ●", " Django"],
+    techStacks: ["React", " Django"],
+    category: "React",
   },
   {
     id: 2,
-    title: "SastoBazaar (incomplete)",
+    title: "SastoBazaar",
     icon: "🛒",
-    description:
-      "E-commerce website build using react js and tailwind css. Added features such as authentication, add to cart, search for products, pagination and so on.",
+    description: "E-commerce website build using react js and tailwind css.",
     image: "",
     url: "https://sastobazaar.netlify.app",
     github: "https://github.com/KriteshTimsina/nestnepal-frontend-NestStore",
-    techStacks: ["React ●", " Tailwind css ●", " Typescript"],
+    techStacks: ["React", " Tailwind"],
+    category: "React",
   },
   {
     id: 3,
     title: "Music World",
     icon: "🎵",
     description:
-      "A simple and minimal music app that shows trending albums from genius api and search albums and their songs.",
+      "A simple and minimal music app allowing search and view trending albums.",
     image: "",
     url: "https://musicsansar.vercel.app/",
     github: "",
-    techStacks: ["Next js ●", "Tailwind css ●", "Typescript"],
+    techStacks: ["Next js"],
+    category: "Next",
   },
   {
-    id: 3,
+    id: 4,
     title: "Expense Tracker",
     icon: "📚",
-    description: "Expense tracker to track your income and expenses",
+    description: "Expense tracker to track your income and expenses.",
     image: "",
     url: "https://daytodayexpenses.netlify.app",
     github: "https://github.com/KriteshTimsina/expense-tracker",
-    techStacks: ["React js ●", "Tailwind css ●", "Typescript"],
+    techStacks: ["React", "Tailwind"],
+    category: "React",
   },
 ];
