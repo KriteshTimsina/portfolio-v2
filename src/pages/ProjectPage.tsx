@@ -25,7 +25,10 @@ const ProjectPage = () => {
                 <div className="flex gap-1 text-sm text-white ">
                   {project.techStacks.map((tech) => {
                     return (
-                      <p className="px-1 rounded-sm bg-red-400/20" key={tech}>
+                      <p
+                        className="px-1 text-black rounded-sm bg-red-400/20 dark:text-white"
+                        key={tech}
+                      >
                         {tech}
                       </p>
                     );
@@ -46,7 +49,8 @@ const ProjectPage = () => {
                 {project.github ? (
                   <a
                     target="_blank"
-                    className="flex items-center gap-1 p-1 text-black bg-white rounded"
+                    rel="noreferrer noopener"
+                    className="flex items-center gap-1 p-1 text-white bg-black rounded dark:bg-white dark:text-black"
                     href={project.github}
                   >
                     <p>Github</p>
@@ -63,7 +67,7 @@ const ProjectPage = () => {
                   </button>
                 )}
                 <a
-                  className="flex items-center gap-1 p-1 text-black bg-white rounded"
+                  className="flex items-center gap-1 p-1 text-white bg-black rounded dark:bg-white dark:text-black"
                   href={project.url}
                 >
                   <p>Live preview</p>
