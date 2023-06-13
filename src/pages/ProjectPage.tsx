@@ -10,7 +10,7 @@ const ProjectPage = () => {
         <BsListTask className="text-blue-400" />
         <h1>Projects</h1>
       </section>
-      <section className="flex flex-wrap justify-center gap-5 px-5 md:justify-start">
+      <section className="flex flex-wrap justify-center gap-10 px-5 md:justify-start">
         {projects.map((project) => {
           return (
             <div
@@ -43,15 +43,27 @@ const ProjectPage = () => {
               </p>
 
               <div className="flex justify-start gap-5 text-sm md:text-base">
+                {project.github ? (
+                  <a
+                    target="_blank"
+                    className="flex items-center gap-1 p-1 text-black bg-white rounded"
+                    href={project.github}
+                  >
+                    <p>Github</p>
+                    <AiFillGithub />
+                  </a>
+                ) : (
+                  <button
+                    type="button"
+                    disabled
+                    className="flex items-center gap-1 p-1 text-black bg-gray-400 rounded focus:outline-none brightness-75"
+                  >
+                    <p>Github</p>
+                    <AiFillGithub />
+                  </button>
+                )}
                 <a
-                  className="flex items-center gap-1 p-1 text-black bg-white"
-                  href={project.github}
-                >
-                  <p>Github</p>
-                  <AiFillGithub />
-                </a>
-                <a
-                  className="flex items-center gap-1 p-1 text-black bg-white"
+                  className="flex items-center gap-1 p-1 text-black bg-white rounded"
                   href={project.url}
                 >
                   <p>Live preview</p>

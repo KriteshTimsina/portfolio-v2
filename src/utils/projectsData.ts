@@ -1,4 +1,4 @@
-import musicsansar from "../assets/musicsansar.jpg";
+import musicsansar from "../assets/musicworld.png";
 import expensetracker from "../assets/expensetracker.jpg";
 import passwordgenerator from "../assets/passwordgenerator.png";
 import sastobazaar from "../assets/sastobazaar.png";
@@ -73,7 +73,7 @@ export const projectsData: IProjects = [
     image: passwordgenerator,
     url: "https://randompasswordgeneration.netlify.app",
     github: "https://github.com/KriteshTimsina/random-password-generator",
-    techStacks: ["Js", "sass"],
+    techStacks: ["Javascript"],
     category: "js",
   },
 ];

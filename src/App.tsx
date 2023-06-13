@@ -4,7 +4,6 @@ import About from "./pages/About";
 import Education from "./pages/Education";
 import Home from "./pages/Home";
 import ProjectPage from "./pages/ProjectPage";
-import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
           <About />
           <Education />
           <Skills />
-          {/* <Projects /> */}
           <ProjectPage />
         </div>
       </div>

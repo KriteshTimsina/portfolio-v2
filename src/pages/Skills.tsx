@@ -1,11 +1,5 @@
 import { GoLightBulb } from "react-icons/go";
-import {
-  DiReact,
-  DiJavascript1,
-  DiCss3,
-  DiSass,
-  DiGithubBadge,
-} from "react-icons/di";
+import { DiReact, DiJavascript1, DiCss3, DiSass } from "react-icons/di";
 import { SiTypescript, SiTailwindcss } from "react-icons/si";
 import { AiFillHtml5 } from "react-icons/ai";
 import { BsGit } from "react-icons/bs";
