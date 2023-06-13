@@ -1,3 +1,9 @@
+import musicsansar from "../assets/musicsansar.jpg";
+import expensetracker from "../assets/expensetracker.jpg";
+import passwordgenerator from "../assets/passwordgenerator.png";
+import sastobazaar from "../assets/sastobazaar.png";
+import subhakaarya from "../assets/subhakaarya.jpg";
+
 type IProjects = {
   id: number;
   title: string;
@@ -16,8 +22,8 @@ export const projectsData: IProjects = [
     icon: "💐",
     title: "Subhakaarya",
     description:
-      "Event management website that allows users to view and book services for the events. Specifically worked on the frontend part of the website.",
-    image: "/src/assets/subhakaarya.png",
+      "Event management website that allows users to view and book services for the events.",
+    image: subhakaarya,
     url: "https://subhakaarya.com/",
     github: "",
     techStacks: ["React", " Django"],
@@ -28,19 +34,20 @@ export const projectsData: IProjects = [
     title: "SastoBazaar",
     icon: "🛒",
     description: "E-commerce website build using react js and tailwind css.",
-    image: "",
+    image: sastobazaar,
     url: "https://sastobazaar.netlify.app",
     github: "https://github.com/KriteshTimsina/nestnepal-frontend-NestStore",
     techStacks: ["React", " Tailwind"],
     category: "React",
   },
+
   {
     id: 3,
     title: "Music World",
     icon: "🎵",
     description:
       "A simple and minimal music app allowing search and view trending albums.",
-    image: "",
+    image: musicsansar,
     url: "https://musicsansar.vercel.app/",
     github: "",
     techStacks: ["Next js"],
@@ -51,10 +58,34 @@ export const projectsData: IProjects = [
     title: "Expense Tracker",
     icon: "📚",
     description: "Expense tracker to track your income and expenses.",
-    image: "",
+    image: expensetracker,
     url: "https://daytodayexpenses.netlify.app",
     github: "https://github.com/KriteshTimsina/expense-tracker",
     techStacks: ["React", "Tailwind"],
     category: "React",
   },
+  {
+    id: 5,
+    title: "Password Generator",
+    icon: "🔀",
+    description:
+      "Generate random password with letters, numbers and special characters.",
+    image: passwordgenerator,
+    url: "https://randompasswordgeneration.netlify.app",
+    github: "https://github.com/KriteshTimsina/random-password-generator",
+    techStacks: ["Js", "sass"],
+    category: "js",
+  },
 ];
+// {
+//   id: 3,
+//   title: "global chat app",
+//   icon: "💬",
+//   description:
+//     "Realtime chat application that allows user to interact with each other in realtime.",
+//   image: chat,
+//   url: "https://wassupbroo.vercel.app",
+//   github: "https://github.com/KriteshTimsina/chat-app",
+//   techStacks: ["Next js", "Socket"],
+//   category: "next",
+// },

@@ -2,14 +2,15 @@ import { BsListTask } from "react-icons/bs";
 import { projectsData as projects } from "../utils/projectsData";
 import CallToAction from "../components/CallToAction";
 import sourcecode from "../assets/sourcecode.png";
+
 const Projects = () => {
   return (
-    <div className="flex flex-col mt-10 gap-6">
+    <div className="flex flex-col gap-6 mt-10">
       <section className="flex items-center gap-2 text-3xl ">
         <BsListTask className="text-blue-400" />
         <h1>Projects</h1>
       </section>
-      <section className="px-5 flex flex-col gap-5">
+      <section className="flex flex-col gap-5 px-5">
         {projects.map((project) => {
           return (
             <div key={project.id}>
@@ -17,10 +18,10 @@ const Projects = () => {
                 {project.icon}
                 {project.title}
               </h1>
-              <div className="flex text-typography font-bold mb-2">
+              <div className="flex mb-2 font-bold text-typography">
                 {project.techStacks.map((tech) => {
                   return (
-                    <p className="whitespace-nowrap mr-2" key={tech}>
+                    <p className="mr-2 whitespace-nowrap" key={tech}>
                       {tech}
                     </p>
                   );

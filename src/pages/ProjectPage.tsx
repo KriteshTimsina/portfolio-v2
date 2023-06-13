@@ -15,7 +15,7 @@ const ProjectPage = () => {
           return (
             <div
               key={project.id}
-              className="flex flex-col gap-2 w-80 sm:max-w-[350px] "
+              className="flex flex-col gap-2 w-80 sm:max-w-[350px]  "
             >
               <div className="flex items-center justify-between ">
                 <h1 className="text-base font-bold">
@@ -33,12 +33,12 @@ const ProjectPage = () => {
                 </div>
               </div>
               <img
-                src="https://shreedeshniroula.com.np/projectimage/subhakaarya.jpg"
+                src={project.image}
                 alt={project.title}
                 width={350}
-                className="w-80 sm:w-[350px]"
+                className="w-80 sm:w-[350px] h-[180px]"
               />
-              <p className="text-sm md:text-base text-typography ">
+              <p className="h-16 text-sm md:text-base text-typography">
                 {project.description}
               </p>
 

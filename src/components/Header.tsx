@@ -1,20 +1,17 @@
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { useTheme } from "../contexts/ThemeContext";
-
+import logo from "../assets/logo.png";
 const Header = () => {
   const theme = useTheme();
 
   return (
-    <header className="p-5 flex justify-around h-20 items-center sticky top-0 z-20  bg-white  dark:bg-background ">
+    <header className="sticky top-0 z-20 flex items-center justify-around h-20 p-5 dark:bg-background ">
       <a
         onClick={() => window.scrollTo(0, 0)}
         href="#"
-        className="scroll-smooth text-2xl text-primary font-dmsans font-bold dark:text-primary cursor-pointer group flex "
+        className="flex gap-1 text-2xl font-bold cursor-pointer scroll-smooth text-primary font-dmsans dark:text-primary "
       >
-        Kritesh
-        <span className=" -translate-x-20 opacity-0 text-black dark:text-white group-hover:translate-x-0 group-hover:opacity-100 transition-transform">
-          Timsina
-        </span>
+        <img src={logo} alt="Kritesh Timsina" width={200} />
       </a>
       <nav className="cursor-pointer">
         <DarkModeSwitch
