@@ -3,6 +3,7 @@ import expensetracker from "../assets/expensetracker.jpg";
 import passwordgenerator from "../assets/passwordgenerator.png";
 import sastobazaar from "../assets/sastobazaar.png";
 import subhakaarya from "../assets/subhakaarya.jpg";
+import chat from "../assets/chat.png";
 
 type IProjects = {
   id: number;
@@ -40,6 +41,18 @@ export const projectsData: IProjects = [
     techStacks: ["React", " Tailwind"],
     category: "React",
   },
+  {
+    id: 3,
+    title: "Wassup-chat app",
+    icon: "💬",
+    description:
+      "Chat app that allows user to interact with each other in realtime.",
+    image: chat,
+    url: "https://wassupbroo.vercel.app",
+    github: "https://github.com/KriteshTimsina/chat-app",
+    techStacks: ["Next js"],
+    category: "next",
+  },
 
   {
     id: 3,
@@ -64,28 +77,4 @@ export const projectsData: IProjects = [
     techStacks: ["React", "Tailwind"],
     category: "React",
   },
-  {
-    id: 5,
-    title: "Password Generator",
-    icon: "🔀",
-    description:
-      "Generate random password with letters, numbers and special characters.",
-    image: passwordgenerator,
-    url: "https://randompasswordgeneration.netlify.app",
-    github: "https://github.com/KriteshTimsina/random-password-generator",
-    techStacks: ["Javascript"],
-    category: "js",
-  },
 ];
-// {
-//   id: 3,
-//   title: "global chat app",
-//   icon: "💬",
-//   description:
-//     "Realtime chat application that allows user to interact with each other in realtime.",
-//   image: chat,
-//   url: "https://wassupbroo.vercel.app",
-//   github: "https://github.com/KriteshTimsina/chat-app",
-//   techStacks: ["Next js", "Socket"],
-//   category: "next",
-// },
