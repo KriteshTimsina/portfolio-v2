@@ -1,6 +1,5 @@
 import musicsansar from "../assets/musicworld.png";
 import expensetracker from "../assets/expensetracker.jpg";
-import passwordgenerator from "../assets/passwordgenerator.png";
 import sastobazaar from "../assets/sastobazaar.png";
 import subhakaarya from "../assets/subhakaarya.jpg";
 import chat from "../assets/chat.png";
