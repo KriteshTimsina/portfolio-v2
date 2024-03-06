@@ -16,7 +16,7 @@ const Home = () => {
         <div>
           <Typewriter
             options={{
-              strings: ["Web Developer", "Musician(wannabe)"],
+              strings: ["Web/ Mobile Application  Developer", "Musician(wannabe)"],
               autoStart: true,
               loop: true,
             }}

@@ -1,8 +1,11 @@
 import { GoLightBulb } from "react-icons/go";
 import { DiReact, DiJavascript1, DiCss3, DiSass } from "react-icons/di";
-import { SiTypescript, SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiTypescript, SiTailwindcss, SiNextdotjs ,SiMongodb} from "react-icons/si";
 import { AiFillHtml5 } from "react-icons/ai";
 import { BsGit } from "react-icons/bs";
+import { FaNode } from "react-icons/fa";
+
+
 
 const Skills = () => {
   return (
@@ -11,7 +14,7 @@ const Skills = () => {
         <GoLightBulb className="text-yellow-500 " />
         <h1>Skills</h1>
       </section>
-      <section className="flex flex-wrap items-center justify-start gap-1 px-5 cursor-pointer ">
+      <section className="flex flex-wrap items-center justify-start gap-2 px-5 cursor-pointer ">
         <AiFillHtml5
           title="Hypertext Markup Language"
           size={50}
@@ -39,6 +42,8 @@ const Skills = () => {
           size={50}
           className="text-[#07B0CE] "
         />
+        <FaNode title="Node" size={50} className="text-[#4AAA4D]" />
+        <SiMongodb title="Mongo DB" size={50} className="text-[#4AAA4D]" />
         <DiSass
           title="Syntactically Awesome Stylesheet"
           size={50}

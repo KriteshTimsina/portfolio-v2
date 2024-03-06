@@ -8,7 +8,7 @@ const Education = () => {
         <h1>Education</h1>
       </section>
       <section className="px-5 flex gap-10">
-        <Timeline />
+        <Timeline  size={2}/>
         <div className="flex flex-col gap-5">
           <div>
             <h1 className="text-sm text-typography">2016-2018</h1>

@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import { useTheme } from "./contexts/ThemeContext";
 import About from "./pages/About";
 import Education from "./pages/Education";
+import Experience from "./pages/Experience";
 import Home from "./pages/Home";
 import ProjectPage from "./pages/ProjectPage";
 import Skills from "./pages/Skills";
@@ -16,7 +17,8 @@ function App() {
         <div className="w-full px-5 md:px-0 md:w-[797px] mx-auto mt-[50px]">
           <Home />
           <About />
-          <Education />
+          <Education  />
+          <Experience />
           <Skills />
           <ProjectPage />
         </div>
