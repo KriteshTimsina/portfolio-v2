@@ -10,11 +10,20 @@ const Experience = () => {
         <h1>Experience</h1>
       </section>
       <section className="px-5 flex gap-10">
+        <Timeline size={2} />
         <div className="flex flex-col gap-5">
           <div>
-            <h1 className="text-sm text-typography">May 2023 - Present</h1>
+            <h1 className="text-sm text-typography">September 2023 - Present</h1>
             <div>
               <h1 className="font-semibold">Associate Programmer</h1>
+              <p className="text-sm text-typography">Mantra IT Solution, Jwagal, Kathmandu</p>
+            </div>
+          <br />
+          </div>
+          <div>
+            <h1 className="text-sm text-typography">July 2023 - September 2023</h1>
+            <div>
+              <h1 className="font-semibold">Intern</h1>
               <p className="text-sm text-typography">Mantra IT Solution, Jwagal, Kathmandu</p>
             </div>
           </div>
