@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import { useTheme } from "./contexts/ThemeContext";
 import About from "./pages/About";
+import Blogs from "./pages/Blogs/Blogs";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
 import Home from "./pages/Home";
@@ -21,6 +22,7 @@ function App() {
           <Experience />
           <Skills />
           <ProjectPage />
+          <Blogs />
         </div>
       </div>
     </div>
