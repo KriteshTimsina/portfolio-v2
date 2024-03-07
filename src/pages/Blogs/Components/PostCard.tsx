@@ -1,12 +1,16 @@
-import React from 'react'
+import { Link } from "react-router-dom"
+import { Blog } from "../Blogs"
 
+type BlogProps = {
+  blog:Blog
+}
  
-const PostCard = ({blog}:any) => {
+const PostCard:React.FC<BlogProps> = ({blog}) => {
   return (
-    <div className='flex flex-col gap-5'>
-        <img src={blog.image} width={300}  />
-        <h2>{blog.title}</h2>
-    </div>
+    <Link key={blog.id} to={`/blog/${blog.slug}`}  className='flex flex-col gap-5 w-72'>
+        <img src={blog.image} className='w-72'  />
+        <h2 className='w-full'>{blog.title}</h2>
+    </Link>
   )
 }
 

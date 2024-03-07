@@ -26,7 +26,7 @@ export const projectsData: IProjects = [
     image: subhakaarya,
     url: "https://subhakaarya.com/",
     github: "",
-    techStacks: ["React", " Django"],
+    techStacks: ["React"],
     category: "React",
   },
   {
