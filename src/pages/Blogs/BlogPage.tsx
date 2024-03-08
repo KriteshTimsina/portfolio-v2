@@ -10,7 +10,7 @@ const BlogPage = () => {
             <img className='w-full h-full  object-cover'  src='https://miro.medium.com/v2/resize:fit:1100/format:webp/1*eqqGLkn3XbYpHNGS-F5SxQ.png'/>
         </div>
         <div className='h-[2px] w-full bg-black rounded-full ' />
-        <section className='flex flex-col md:flex-row gap-5'>
+        <section className='flex flex-col md:flex-row gap-5 md:w-full'>
             <div className='flex items-center  gap-5'>
                 <div>
                     <img src="https://kriteshtimsina.com.np/assets/kritesh-057690bd.jpg" alt="Kritesh Timsina" className='w-20 h-20 rounded-full' />
@@ -24,7 +24,7 @@ const BlogPage = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-row items-center justify-evenly h-16 bg-white shadow-md border-gray-200 border-[1px] rounded-md'>
+            <div className='flex flex-row items-center justify-evenly h-16 bg-white shadow-md border-gray-200 border-[1px] rounded-md md:flex-1'>
                 <div className="h-full border-r-[1px] flex justify-center items-center">
                 </div>
                 <div className="h-full border-r-[1px]"></div>
