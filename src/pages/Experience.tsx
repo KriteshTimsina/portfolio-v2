@@ -13,7 +13,7 @@ const Experience = () => {
         <Timeline size={2} />
         <div className="flex flex-col gap-5">
           <div>
-            <h1 className="text-sm text-typography">September 2023 - Present</h1>
+            <h1 className="text-sm text-typography">October 2023 - Present</h1>
             <div>
               <h1 className="font-semibold">Associate Programmer</h1>
               <p className="text-sm text-typography">Mantra IT Solution, Jwagal, Kathmandu</p>
