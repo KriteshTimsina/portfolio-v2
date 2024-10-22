@@ -1,20 +1,24 @@
 import { GoLightBulb } from "react-icons/go";
 import { DiReact, DiJavascript1, DiCss3, DiSass } from "react-icons/di";
-import { SiTypescript, SiTailwindcss, SiNextdotjs ,SiMongodb} from "react-icons/si";
+import {
+  SiTypescript,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiMongodb,
+} from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 import { AiFillHtml5 } from "react-icons/ai";
 import { BsGit } from "react-icons/bs";
 import { FaNode } from "react-icons/fa";
 
-
-
 const Skills = () => {
   return (
     <div className="flex flex-col gap-6">
-      <section className="flex items-center gap-2 text-3xl ">
-        <GoLightBulb className="text-yellow-500 " />
+      <section className="flex gap-2 items-center text-3xl">
+        <GoLightBulb className="text-yellow-500" />
         <h1>Skills</h1>
       </section>
-      <section className="flex flex-wrap items-center justify-start gap-2 px-5 cursor-pointer ">
+      <section className="flex flex-wrap gap-2 justify-start items-center px-5 cursor-pointer">
         <AiFillHtml5
           title="Hypertext Markup Language"
           size={50}
@@ -28,7 +32,12 @@ const Skills = () => {
         <DiReact
           title="React- Javascript Library"
           size={50}
-          className="text-blue-400 "
+          className="text-blue-400"
+        />
+        <TbBrandReactNative
+          title="Reactnative"
+          size={50}
+          className="text-blue-400"
         />
         <SiNextdotjs title="Next Js- React framework" size={50} />
         <DiJavascript1
@@ -36,7 +45,7 @@ const Skills = () => {
           size={50}
           className="text-[#ead41c] "
         />
-        <SiTypescript title="Typescript" size={40} className="text-blue-500 " />
+        <SiTypescript title="Typescript" size={40} className="text-blue-500" />
         <SiTailwindcss
           title="Tailwind- css framework"
           size={50}

@@ -1,7 +1,7 @@
 import musicsansar from "../assets/musicworld.png";
 import expensetracker from "../assets/expensetracker.jpg";
 import sastobazaar from "../assets/sastobazaar.png";
-import subhakaarya from "../assets/subhakaarya.jpg";
+import songwriter from "../assets/songwriter-diary.png";
 import chat from "../assets/chat.png";
 
 type IProjects = {
@@ -19,14 +19,14 @@ type IProjects = {
 export const projectsData: IProjects = [
   {
     id: 1,
-    icon: "💐",
-    title: "Subhakaarya",
+    icon: "📒",
+    title: "Songwriter's Diary",
     description:
-      "Event management website that allows users to view and book services for the events.",
-    image: subhakaarya,
-    url: "https://subhakaarya.com/",
-    github: "",
-    techStacks: ["React", " Django"],
+      "Creative 'open-source' platform to capture and organize musical ideas.",
+    image: songwriter,
+    url: "",
+    github: "https://github.com/KriteshTimsina/songwriters-diary",
+    techStacks: ["Reactnative"],
     category: "React",
   },
   {
