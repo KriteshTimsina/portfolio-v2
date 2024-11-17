@@ -16,6 +16,7 @@ export interface Blog {
   updatedAt: string;
   __v: number;
   thumbnail: string;
+  content: string;
 }
 
 export interface AuthorId {
