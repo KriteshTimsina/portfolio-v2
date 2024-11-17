@@ -1,17 +1,39 @@
-import { Link } from "react-router-dom"
-import { Blog } from "../Blogs"
+import { Link } from "react-router-dom";
+import { Blog } from "../Blogs";
+import { IoArrowForwardOutline } from "react-icons/io5";
 
 type BlogProps = {
-  blog:Blog
-}
- 
-const PostCard:React.FC<BlogProps> = ({blog}) => {
-  return (
-    <Link key={blog.id} to={`/blog/${blog.slug}`}  className='flex flex-col gap-5 w-72'>
-        <img src={blog.image} className='w-72'  />
-        <h2 className='w-full'>{blog.title}</h2>
-    </Link>
-  )
-}
+  blog: Blog;
+};
 
-export default PostCard
+const PostCard: React.FC<BlogProps> = ({ blog }) => {
+  return (
+    <Link
+      key={blog.id}
+      to={`/blog/${blog.slug}`}
+      className="flex flex-col gap-3 w-72"
+    >
+      <h2 className="w-full font-bold">{blog.title}</h2>
+      <p className="text-slate-200 text-md font-light">
+        All the things that has been said are true and false...
+      </p>
+      <Link
+        className="flex items-center gap-3 group "
+        to={`/blog/${blog.slug}`}
+      >
+        <p className="text-sm text-slate-400">Continue Reading</p>
+        <IoArrowForwardOutline
+          size={13}
+          className="group-hover:translate-x-1 transition-transform text-slate-400"
+        />
+      </Link>
+      <div className="flex items-center gap-3 mt-3">
+        <p className="text-sm text-typography">November 15, 2024</p>
+        <span className="w-1 h-1 rounded-full bg-typography"></span>
+        <p className="text-sm text-typography">5 min read</p>
+      </div>
+    </Link>
+  );
+};
+
+export default PostCard;
