@@ -1,21 +1,22 @@
 import { Link } from "react-router-dom";
 import { Blog } from "../Blogs";
 import { IoArrowForwardOutline } from "react-icons/io5";
+import dayjs from "dayjs";
 
 type BlogProps = {
   blog: Blog;
 };
 
 const PostCard: React.FC<BlogProps> = ({ blog }) => {
+  const formattedDescription =
+    blog?.description.length > 40
+      ? `${blog?.description.slice(0, 40)}...`
+      : blog?.description;
   return (
-    <Link
-      key={blog.id}
-      to={`/blog/${blog.slug}`}
-      className="flex flex-col gap-3 w-72"
-    >
+    <Link to={`/blog/${blog.slug}`} className="flex flex-col gap-3 w-72">
       <h2 className="w-full font-bold">{blog.title}</h2>
       <p className="text-slate-200 text-md font-light">
-        All the things that has been said are true and false...
+        {formattedDescription}
       </p>
       <Link
         className="flex items-center gap-3 group "
@@ -28,9 +29,11 @@ const PostCard: React.FC<BlogProps> = ({ blog }) => {
         />
       </Link>
       <div className="flex items-center gap-3 mt-3">
-        <p className="text-sm text-typography">November 15, 2024</p>
+        <p className="text-sm text-typography">
+          {dayjs(blog?.createdAt).format("MMMM DD, YYYY")}
+        </p>
         <span className="w-1 h-1 rounded-full bg-typography"></span>
-        <p className="text-sm text-typography">5 min read</p>
+        <p className="text-sm text-typography">{blog.timeToRead} mins</p>
       </div>
     </Link>
   );
