@@ -3,7 +3,6 @@ import { useTheme } from "./contexts/ThemeContext";
 import Main from "./pages";
 import BlogPage from "./pages/Blogs/BlogPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Blogs from "./pages/Blogs/Blogs";
 import BlogsAll from "./pages/Blogs/BlogsAll";
 import NotFound from "./pages/NotFound";
 

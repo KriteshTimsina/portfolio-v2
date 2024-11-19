@@ -6,6 +6,7 @@ import { Blog } from "./Blogs";
 import dayjs from "dayjs";
 import Loader from "../../components/Loader";
 import BASE_URL from "../../constants/BASE_URL";
+import SEO from "../../components/SEO";
 
 const BlogPage = () => {
   const [blog, setBlog] = useState<Blog | null>(null);
@@ -40,10 +41,11 @@ const BlogPage = () => {
     [slug]
   );
 
-  if (loading) return <Loader />;
+  if (loading && !blog) return <Loader />;
 
   return (
     <div className="w-full px-5 md:px-0 md:w-[797px] mx-auto mt-[50px] flex flex-col items-start gap-8">
+      {blog && <SEO title={blog?.title} description={blog?.description} />}
       <div className="flex gap-5 items-center text-typography">
         <div className="flex gap-3 items-center">
           <BsCalendar3 />
