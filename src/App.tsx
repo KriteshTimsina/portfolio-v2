@@ -1,27 +1,26 @@
 import Header from "./components/Header";
 import { useTheme } from "./contexts/ThemeContext";
-import About from "./pages/About";
-import Education from "./pages/Education";
-import Experience from "./pages/Experience";
-import Home from "./pages/Home";
-import ProjectPage from "./pages/ProjectPage";
-import Skills from "./pages/Skills";
+import Main from "./pages";
+import BlogPage from "./pages/Blogs/BlogPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import BlogsAll from "./pages/Blogs/BlogsAll";
+import NotFound from "./pages/NotFound";
 
 function App() {
   const theme = useTheme();
 
   return (
-    <div className={`${theme.isDarkTheme ? "dark" : "light"}`}>
-      <div className="min-h-screen py-5 text-black bg-white dark:bg-background font-jetbrains dark:text-white">
-        <Header />
-        <div className="w-full px-5 md:px-0 md:w-[797px] mx-auto mt-[50px]">
-          <Home />
-          <About />
-          <Education  />
-          <Experience />
-          <Skills />
-          <ProjectPage />
-        </div>
+    <div className={`${theme.isDarkTheme ? "dark" : "light"} `}>
+      <div className="py-5 min-h-screen text-black bg-white transition-all ease-linear dark:bg-background font-jetbrains dark:text-white">
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/blog" element={<BlogsAll />} />
+            <Route path="/blog/:slug" element={<BlogPage />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
       </div>
     </div>
   );
