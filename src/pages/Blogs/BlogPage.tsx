@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Blog } from "./Blogs";
 import dayjs from "dayjs";
+import { PacmanLoader } from "react-spinners";
 
 const API_BASE_URL = import.meta.env.VITE_API_URL;
 
@@ -29,11 +30,20 @@ const BlogPage = () => {
       } catch (error) {
         setLoading(false);
       } finally {
-        setLoading(false);
+        // setLoading(false);
       }
     },
     [slug]
   );
+
+  if (loading) {
+    return (
+      <div className="w-full md:w-[797px] mx-auto flex items-center justify-center h-screen">
+        <PacmanLoader color="black" />
+      </div>
+    );
+  }
+
   return (
     <div className="w-full px-5 md:px-0 md:w-[797px] mx-auto mt-[50px] flex flex-col items-start gap-8">
       <div className="flex gap-5 items-center text-typography">

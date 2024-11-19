@@ -15,20 +15,17 @@ const PostCard: React.FC<BlogProps> = ({ blog }) => {
   return (
     <Link to={`/blog/${blog.slug}`} className="flex flex-col gap-3 w-72">
       <h2 className="w-full font-bold">{blog.title}</h2>
-      <p className="text-slate-200 text-md font-light">
+      <p className="font-light text-slate-500 dark:text-slate-200 text-md">
         {formattedDescription}
       </p>
-      <Link
-        className="flex items-center gap-3 group "
-        to={`/blog/${blog.slug}`}
-      >
+      <Link className="flex gap-3 items-center group" to={`/blog/${blog.slug}`}>
         <p className="text-sm text-slate-400">Continue Reading</p>
         <IoArrowForwardOutline
           size={13}
-          className="group-hover:translate-x-1 transition-transform text-slate-400"
+          className="transition-transform group-hover:translate-x-1 text-slate-400"
         />
       </Link>
-      <div className="flex items-center gap-3 mt-3">
+      <div className="flex gap-3 items-center mt-3">
         <p className="text-sm text-typography">
           {dayjs(blog?.createdAt).format("MMMM DD, YYYY")}
         </p>

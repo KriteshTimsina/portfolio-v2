@@ -7,10 +7,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   const theme = useTheme();
 
-  console.log(import.meta.env.VITE_API_URL); // Logs the API URL
   return (
-    <div className={`${theme.isDarkTheme ? "dark" : "light"}`}>
-      <div className="py-5 min-h-screen text-black bg-white dark:bg-background font-jetbrains dark:text-white">
+    <div className={`${theme.isDarkTheme ? "dark" : "light"} `}>
+      <div className="py-5 min-h-screen text-black bg-white transition-all ease-linear dark:bg-background font-jetbrains dark:text-white">
         <BrowserRouter>
           <Header />
           <Routes>
