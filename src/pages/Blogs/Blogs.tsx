@@ -4,6 +4,7 @@ import CallToAction from "../../components/CallToAction";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import BASE_URL from "../../constants/BASE_URL";
+import Loader from "../../components/Loader";
 
 export interface Blog {
   category: any[];
@@ -29,6 +30,8 @@ export interface AuthorId {
 const Blogs = () => {
   const [blogs, setBlogs] = useState<Blog[]>([]);
 
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     getAllBlogs();
   }, []);
@@ -40,8 +43,15 @@ const Blogs = () => {
       if (data && data?.posts) {
         setBlogs(data?.posts);
       }
-    } catch (error) {}
+    } catch (error) {
+      setLoading(false);
+    } finally {
+      setLoading(false);
+    }
   };
+
+  if (loading) return <Loader />;
+
   return (
     <div className="flex flex-col gap-6 mt-10">
       <div className="flex justify-between items-center">
