@@ -1,8 +1,7 @@
-import { IoArrowForwardOutline, IoBookOutline } from "react-icons/io5";
+import { IoBookOutline } from "react-icons/io5";
 import PostCard from "./Components/PostCard";
-import CallToAction from "../../components/CallToAction";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import Loader from "../../components/Loader";
 
 export interface Blog {
   category: any[];
@@ -25,8 +24,9 @@ export interface AuthorId {
   username: string;
 }
 
-const Blogs = () => {
+const BlogsAll = () => {
   const [blogs, setBlogs] = useState<Blog[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     getAllBlogs();
@@ -34,31 +34,31 @@ const Blogs = () => {
 
   const getAllBlogs = async () => {
     try {
+      setLoading(true);
       const response = await fetch(
         "https://api.kriteshtimsina.com.np/api/v1/post"
       );
       const data = await response.json();
       if (data && data?.posts) {
+        console.log("XA ", data.posts);
         setBlogs(data?.posts);
       }
-    } catch (error) {}
+    } catch (error) {
+      setLoading(false);
+    } finally {
+      setLoading(false);
+    }
   };
+
+  if (loading) return <Loader />;
+
   return (
-    <div className="flex flex-col gap-6 mt-10">
-      <div className="flex justify-between items-center">
-        <section className="flex gap-2 items-center text-3xl">
-          <IoBookOutline className="text-yellow-400" />
-          <h1>Recent Posts</h1>
-        </section>
-        <Link to={"/blog"} className="flex gap-3 items-center group">
-          <h2>All Blogs</h2>
-          <IoArrowForwardOutline
-            size={20}
-            className="text-white transition-transform group-hover:translate-x-1 dark:text-black"
-          />
-        </Link>
-      </div>
-      <section className="flex flex-wrap gap-10 justify-center px-5 md:justify-start">
+    <div className="px-5 md:px-0 max-w-5xl mx-auto mt-[50px] flex flex-col items-start gap-8">
+      <section className="flex gap-2 items-center text-3xl">
+        <IoBookOutline className="text-yellow-400" />
+        <h1>Recent Posts</h1>
+      </section>
+      <section className="flex flex-wrap gap-10 justify-start px-5">
         {blogs &&
           blogs.map((blog: Blog) => {
             return <PostCard key={blog._id} blog={blog} />;
@@ -69,4 +69,4 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+export default BlogsAll;

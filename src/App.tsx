@@ -3,6 +3,8 @@ import { useTheme } from "./contexts/ThemeContext";
 import Main from "./pages";
 import BlogPage from "./pages/Blogs/BlogPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Blogs from "./pages/Blogs/Blogs";
+import BlogsAll from "./pages/Blogs/BlogsAll";
 
 function App() {
   const theme = useTheme();
@@ -14,6 +16,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Main />} />
+            <Route path="/blog" element={<BlogsAll />} />
             <Route path="/blog/:slug" element={<BlogPage />} />
           </Routes>
         </BrowserRouter>

@@ -5,11 +5,12 @@ import { useParams } from "react-router-dom";
 import { Blog } from "./Blogs";
 import dayjs from "dayjs";
 import { PacmanLoader } from "react-spinners";
+import Loader from "../../components/Loader";
 
 const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 const BlogPage = () => {
-  const [blog, setBlog] = useState<Blog>();
+  const [blog, setBlog] = useState<Blog | null>(null);
   const { slug } = useParams();
   const [loading, setLoading] = useState(true);
 
@@ -17,6 +18,11 @@ const BlogPage = () => {
     if (slug) {
       getBlogBySlug(slug);
     }
+
+    return () => {
+      setBlog(null);
+      setLoading(false);
+    };
   }, [slug]);
 
   const getBlogBySlug = useCallback(
@@ -30,19 +36,13 @@ const BlogPage = () => {
       } catch (error) {
         setLoading(false);
       } finally {
-        // setLoading(false);
+        setLoading(false);
       }
     },
     [slug]
   );
 
-  if (loading) {
-    return (
-      <div className="w-full md:w-[797px] mx-auto flex items-center justify-center h-screen">
-        <PacmanLoader color="black" />
-      </div>
-    );
-  }
+  if (loading) return <Loader />;
 
   return (
     <div className="w-full px-5 md:px-0 md:w-[797px] mx-auto mt-[50px] flex flex-col items-start gap-8">
