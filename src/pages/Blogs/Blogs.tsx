@@ -3,6 +3,7 @@ import PostCard from "./Components/PostCard";
 import CallToAction from "../../components/CallToAction";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import BASE_URL from "../../constants/BASE_URL";
 
 export interface Blog {
   category: any[];
@@ -34,9 +35,7 @@ const Blogs = () => {
 
   const getAllBlogs = async () => {
     try {
-      const response = await fetch(
-        "https://api.kriteshtimsina.com.np/api/v1/post"
-      );
+      const response = await fetch(`${BASE_URL}/post`);
       const data = await response.json();
       if (data && data?.posts) {
         setBlogs(data?.posts);

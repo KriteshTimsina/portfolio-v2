@@ -4,10 +4,8 @@ import { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Blog } from "./Blogs";
 import dayjs from "dayjs";
-import { PacmanLoader } from "react-spinners";
 import Loader from "../../components/Loader";
-
-const API_BASE_URL = import.meta.env.VITE_API_URL;
+import BASE_URL from "../../constants/BASE_URL";
 
 const BlogPage = () => {
   const [blog, setBlog] = useState<Blog | null>(null);
@@ -28,7 +26,7 @@ const BlogPage = () => {
   const getBlogBySlug = useCallback(
     async (slug: string) => {
       try {
-        const response = await fetch(`${API_BASE_URL}/post/${slug}`);
+        const response = await fetch(`${BASE_URL}/post/${slug}`);
         const data = await response.json();
         if (data && data?.post) {
           setBlog(data?.post);

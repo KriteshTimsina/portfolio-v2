@@ -5,6 +5,7 @@ import BlogPage from "./pages/Blogs/BlogPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Blogs from "./pages/Blogs/Blogs";
 import BlogsAll from "./pages/Blogs/BlogsAll";
+import NotFound from "./pages/NotFound";
 
 function App() {
   const theme = useTheme();
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Main />} />
             <Route path="/blog" element={<BlogsAll />} />
             <Route path="/blog/:slug" element={<BlogPage />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </div>
