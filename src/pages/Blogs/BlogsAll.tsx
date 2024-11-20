@@ -51,17 +51,12 @@ const BlogsAll = () => {
   if (loading) return <Loader />;
 
   return (
-    <div className="px-5 md:px-0 max-w-5xl mx-auto mt-[50px] flex flex-col items-start gap-8">
-      <section className="flex gap-2 items-center text-3xl">
-        <IoBookOutline className="text-yellow-400" />
-        <h1>Recent Posts</h1>
-      </section>
-      <section className="flex flex-wrap gap-10 justify-start px-5">
+    <div className="w-full px-5 md:px-0 md:w-[797px] lg:w-[920px] mx-auto mt-[50px] flex flex-col items-start">
+      <section className="flex flex-wrap gap-7 justify-start">
         {blogs &&
           blogs.map((blog: Blog) => {
             return <PostCard key={blog._id} blog={blog} />;
           })}
-        {/* <CallToAction href="" title="Explore more..." /> */}
       </section>
     </div>
   );

@@ -1,6 +1,5 @@
 import { IoArrowForwardOutline, IoBookOutline } from "react-icons/io5";
 import PostCard from "./Components/PostCard";
-import CallToAction from "../../components/CallToAction";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import BASE_URL from "../../constants/BASE_URL";
@@ -63,7 +62,7 @@ const Blogs = () => {
           <h2>All Blogs</h2>
           <IoArrowForwardOutline
             size={20}
-            className="text-white transition-transform group-hover:translate-x-1 dark:text-black"
+            className="text-black transition-transform group-hover:translate-x-1 dark:text-white"
           />
         </Link>
       </div>

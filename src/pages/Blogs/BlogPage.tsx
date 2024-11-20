@@ -65,6 +65,7 @@ const BlogPage = () => {
           margin: "2em",
         }}
       >
+        {/* @ts-ignore */}
         <Markdown>{blog?.content}</Markdown>
       </div>
     </div>
