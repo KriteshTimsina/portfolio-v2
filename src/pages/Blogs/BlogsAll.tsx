@@ -1,4 +1,3 @@
-import { IoBookOutline } from "react-icons/io5";
 import PostCard from "./Components/PostCard";
 import { useEffect, useState } from "react";
 import Loader from "../../components/Loader";
