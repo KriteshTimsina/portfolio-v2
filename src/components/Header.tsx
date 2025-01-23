@@ -1,5 +1,5 @@
 import { DarkModeSwitch } from "react-toggle-dark-mode";
-import { useTheme } from "../contexts/ThemeContext";
+import { useTheme } from "../hooks/useTheme";
 import logo from "../assets/logo.png";
 const Header = () => {
   const theme = useTheme();

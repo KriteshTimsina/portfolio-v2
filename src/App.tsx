@@ -1,10 +1,8 @@
 import Header from "./components/Header";
-import { useTheme } from "./contexts/ThemeContext";
 import Main from "./pages";
-import BlogPage from "./pages/Blogs/BlogPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import BlogsAll from "./pages/Blogs/BlogsAll";
 import NotFound from "./pages/NotFound";
+import { useTheme } from "./hooks/useTheme";
 
 function App() {
   const theme = useTheme();
@@ -16,8 +14,6 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Main />} />
-            <Route path="/blog" element={<BlogsAll />} />
-            <Route path="/blog/:slug" element={<BlogPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
