@@ -1,8 +1,8 @@
-import musicsansar from "../assets/musicworld.png";
-import expensetracker from "../assets/expensetracker.jpg";
 import sastobazaar from "../assets/sastobazaar.png";
 import songwriter from "../assets/songwriter-diary.png";
 import chat from "../assets/chat.png";
+import photoscloud from "../assets/photoscloud.png";
+import checked from "../assets/checked.png";
 
 type IProjects = {
   id: number;
@@ -19,6 +19,28 @@ type IProjects = {
 export const projectsData: IProjects = [
   {
     id: 1,
+    icon: "📸",
+    title: "Photos Cloud",
+    description: "Secure cloud storage for your photos.",
+    image: photoscloud,
+    url: "https://photoscloud.vercel.app",
+    github: "https://github.com/KriteshTimsina/photoscloud",
+    techStacks: ["Next js, Tailwind"],
+    category: "React",
+  },
+  {
+    id: 2,
+    icon: "✅",
+    title: "Checked",
+    description: "Todos and notes. Never miss a thing.",
+    image: checked,
+    url: "https://checked.kriteshtimsina.com.np",
+    github: "https://github.com/KriteshTimsina/checked",
+    techStacks: ["Reactnative", "Expo"],
+    category: "React",
+  },
+  {
+    id: 3,
     icon: "📒",
     title: "Songwriter's Diary",
     description:
@@ -30,7 +52,7 @@ export const projectsData: IProjects = [
     category: "React",
   },
   {
-    id: 2,
+    id: 4,
     title: "SastoBazaar",
     icon: "🛒",
     description: "E-commerce website build using react js and tailwind css.",
@@ -41,7 +63,7 @@ export const projectsData: IProjects = [
     category: "React",
   },
   {
-    id: 3,
+    id: 5,
     title: "Wassup-chat app",
     icon: "💬",
     description:
@@ -51,29 +73,5 @@ export const projectsData: IProjects = [
     github: "https://github.com/KriteshTimsina/chat-app",
     techStacks: ["Next js"],
     category: "next",
-  },
-
-  {
-    id: 3,
-    title: "Music World",
-    icon: "🎵",
-    description:
-      "A simple and minimal music app allowing search and view trending albums.",
-    image: musicsansar,
-    url: "https://musicsansar.vercel.app/",
-    github: "",
-    techStacks: ["Next js"],
-    category: "Next",
-  },
-  {
-    id: 4,
-    title: "Expense Tracker",
-    icon: "📚",
-    description: "Expense tracker to track your income and expenses.",
-    image: expensetracker,
-    url: "https://daytodayexpenses.netlify.app",
-    github: "https://github.com/KriteshTimsina/expense-tracker",
-    techStacks: ["React", "Tailwind"],
-    category: "React",
   },
 ];

@@ -68,6 +68,7 @@ const ProjectPage = () => {
                 )}
                 {project.url && (
                   <a
+                    target="_blank"
                     className="flex gap-1 items-center p-1 text-white bg-black rounded dark:bg-white dark:text-black"
                     href={project.url}
                   >
