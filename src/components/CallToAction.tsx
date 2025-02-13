@@ -1,19 +1,18 @@
-interface IParams {
+interface ICta {
   href: string;
   title: string;
-  icon?: any;
-  image?: any;
+  image?: string;
 }
 
-const CallToAction = ({ href, title, image }: IParams) => {
+const CallToAction = ({ href, title, image }: ICta) => {
   return (
     <a
       href={href}
       target="_blank"
-      className=" mt-2 bg-black w-fit px-2 py-1 text-white rounded-md flex items-center gap-1 hover:bg-transparent hover:border-black hover:border-2 hover:text-black transition-colors duration-300 hover:scale-105 dark:border-white dark:border-2  dark:shadow-yellow-200 dark:shadow-inner dark:text-white "
+      className="flex gap-1 items-center px-2 py-1 mt-2 text-white bg-black rounded-md transition-colors duration-300 w-fit hover:bg-transparent hover:border-black hover:border-2 hover:text-black hover:scale-105 dark:border-white dark:border-2 dark:shadow-yellow-200 dark:shadow-inner dark:text-white"
     >
       <span>{title}</span>
-      {image && <img src={image} alt={title} width={20} className="" />}
+      {image && <img src={image} alt={title} width={20} />}
     </a>
   );
 };

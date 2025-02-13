@@ -8,7 +8,7 @@ import Socials from "../components/Socials";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-3 justify-between items-start  sm:flex-row sm:items-center">
+    <div className="flex flex-col gap-3 justify-between items-start sm:flex-row sm:items-center">
       <section className="flex flex-col order-2 gap-1 px-5 sm:order-1">
         <h1 className="">Namaste, I'm</h1>
         <h1 className="text-3xl font-extrabold">

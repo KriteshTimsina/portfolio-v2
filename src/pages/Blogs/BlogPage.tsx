@@ -24,22 +24,19 @@ const BlogPage = () => {
     };
   }, [slug]);
 
-  const getBlogBySlug = useCallback(
-    async (slug: string) => {
-      try {
-        const response = await fetch(`${BASE_URL}/post/${slug}`);
-        const data = await response.json();
-        if (data && data?.post) {
-          setBlog(data?.post);
-        }
-      } catch (error) {
-        setLoading(false);
-      } finally {
-        setLoading(false);
+  const getBlogBySlug = useCallback(async (slug: string) => {
+    try {
+      const response = await fetch(`${BASE_URL}/post/${slug}`);
+      const data = await response.json();
+      if (data && data?.post) {
+        setBlog(data?.post);
       }
-    },
-    [slug]
-  );
+    } catch (error) {
+      setLoading(false);
+    } finally {
+      setLoading(false);
+    }
+  }, []);
 
   if (loading && !blog) return <Loader />;
 

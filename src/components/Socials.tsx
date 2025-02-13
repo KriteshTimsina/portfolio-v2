@@ -1,4 +1,4 @@
-import { AiFillGithub, AiFillInstagram, AiFillYoutube } from "react-icons/ai";
+import { AiFillGithub, AiFillYoutube } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 const Socials = () => {
   return (

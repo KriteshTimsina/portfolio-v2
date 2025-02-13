@@ -6,7 +6,7 @@ import BASE_URL from "../../constants/BASE_URL";
 import Loader from "../../components/Loader";
 
 export interface Blog {
-  category: any[];
+  category: string[];
   _id: string;
   title: string;
   slug: string;

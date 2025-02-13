@@ -4,7 +4,7 @@ import Loader from "../../components/Loader";
 import BASE_URL from "../../constants/BASE_URL";
 
 export interface Blog {
-  category: any[];
+  category: string[];
   _id: string;
   title: string;
   slug: string;
