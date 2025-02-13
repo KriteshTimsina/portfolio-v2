@@ -16,9 +16,11 @@ const Education = () => {
               <h1 className="font-semibold">Bachelor's Degree</h1>
               <p className="text-sm font-semibold text-typography">
                 Bachelor in Science in Computer Science and Information
-                Technology (B.Sc CSIT)
+                Technology (B.Sc. CSIT)
               </p>
-              <p className="text-sm text-typography">Tribhuvan University</p>
+              <p className="text-sm text-typography">
+                Mechi Multiple Campus{"(TU)"}
+              </p>
             </div>
           </div>
           <div>

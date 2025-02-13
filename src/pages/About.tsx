@@ -1,5 +1,4 @@
 import { RxInfoCircled } from "react-icons/rx";
-import CallToAction from "../components/CallToAction";
 
 const About = () => {
   return (
@@ -10,11 +9,9 @@ const About = () => {
       </section>
       <section className="px-5 text-typography">
         <p className="mb-3 selection:bg-yellow-300">
-          Highly motivated computer science enthusiast with a passion for
-          problem-solving and software development. With strong analytical
-          abilities and a keen eye for detail, I believe in my capability to
-          contribute effectively to any team, ensuring success in my career as a
-          software developer.
+          Front-end developer with a knack for crafting clean, user-friendly
+          interfaces, optimizing performance, and enhancing user experiences
+          across web and mobile applications.
         </p>
       </section>
     </div>

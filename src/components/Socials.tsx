@@ -15,12 +15,6 @@ const Socials = () => {
           size={25}
         />
       </a>
-      <a href="https://www.instagram.com/kritstims/" target="_blank">
-        <AiFillInstagram
-          className="hover:text-[#D61861] transition-all"
-          size={25}
-        />
-      </a>
       <a href="https://www.youtube.com/@kritstims" target="_blank">
         <AiFillYoutube
           className="hover:text-[#c4302b] transition-all"
