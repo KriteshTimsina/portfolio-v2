@@ -5,7 +5,7 @@ const Education = () => {
     <div className="flex flex-col gap-6 py-10">
       <section className="flex gap-2 items-center text-3xl">
         <BsMortarboard className="text-green-500" />
-        <h1>Education</h1>
+        <h1>Acedemics</h1>
       </section>
       <section className="flex gap-10 px-5">
         <Timeline size={2} />
