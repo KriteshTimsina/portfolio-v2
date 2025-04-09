@@ -11,7 +11,7 @@ import { AiFillHtml5 } from "react-icons/ai";
 import { BsGit } from "react-icons/bs";
 import { FaNode } from "react-icons/fa";
 
-const Skills = () => {
+export const Skills = () => {
   return (
     <div className="flex flex-col gap-6">
       <section className="flex gap-2 items-center text-3xl">
@@ -63,5 +63,3 @@ const Skills = () => {
     </div>
   );
 };
-
-export default Skills;

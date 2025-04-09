@@ -1,12 +1,13 @@
 import Typewriter from "typewriter-effect";
-import kritesh from "../assets/kritesh.jpg";
-import resume from "../assets/KriteshTimsina-React-Reactnative-developer.pdf";
-import cvicon from "../assets/cvicon.gif";
-import emailme from "../assets/emailme.gif";
-import CallToAction from "../components/CallToAction";
-import Socials from "../components/Socials";
+import CallToAction from "../CallToAction";
+import Socials from "../Socials";
 
-const Home = () => {
+import resume from "../../assets/KriteshTimsina-React-Reactnative-developer.pdf";
+import cvicon from "../../assets/cvicon.gif";
+import emailme from "../../assets/emailme.gif";
+import kritesh from "../../assets/kritesh.jpg";
+
+export const Landing = () => {
   return (
     <div className="flex flex-col gap-3 justify-between items-start sm:flex-row sm:items-center">
       <section className="flex flex-col order-2 gap-1 px-5 sm:order-1">
@@ -47,5 +48,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;

@@ -1,6 +1,7 @@
 import { BsMortarboard } from "react-icons/bs";
-import Timeline from "../components/Timeline";
-const Education = () => {
+import Timeline from "../Timeline";
+
+export const Education = () => {
   return (
     <div className="flex flex-col gap-6 py-10">
       <section className="flex gap-2 items-center text-3xl">
@@ -38,5 +39,3 @@ const Education = () => {
     </div>
   );
 };
-
-export default Education;

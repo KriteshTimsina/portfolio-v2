@@ -1,7 +1,7 @@
 import { MdWorkOutline } from "react-icons/md";
-import Timeline from "../components/Timeline";
+import Timeline from "../Timeline";
 
-const Experience = () => {
+export const Experience = () => {
   return (
     <div className="flex flex-col gap-6 py-10">
       <section className="flex gap-2 items-center text-3xl">
@@ -37,5 +37,3 @@ const Experience = () => {
     </div>
   );
 };
-
-export default Experience;

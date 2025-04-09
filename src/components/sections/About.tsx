@@ -1,6 +1,6 @@
 import { RxInfoCircled } from "react-icons/rx";
 
-const About = () => {
+export const About = () => {
   return (
     <div className="flex flex-col gap-6 mt-10">
       <section className="flex gap-2 items-center text-3xl">
@@ -17,5 +17,3 @@ const About = () => {
     </div>
   );
 };
-
-export default About;

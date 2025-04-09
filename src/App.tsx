@@ -1,8 +1,7 @@
-import Header from "./components/Header";
-import Main from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NotFound from "./pages/NotFound";
 import { useTheme } from "./hooks/useTheme";
+import Header from "./components/Header";
+import { Main, NotFound } from "./pages";
 
 function App() {
   const theme = useTheme();
