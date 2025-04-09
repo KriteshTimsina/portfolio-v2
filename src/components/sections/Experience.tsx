@@ -1,5 +1,5 @@
 import { MdWorkOutline } from "react-icons/md";
-import Timeline from "../Timeline";
+import { Timeline } from "../shared";
 
 export const Experience = () => {
   return (

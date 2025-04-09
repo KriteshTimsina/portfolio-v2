@@ -4,7 +4,7 @@ interface ICta {
   image?: string;
 }
 
-const CallToAction = ({ href, title, image }: ICta) => {
+export const CallToAction = ({ href, title, image }: ICta) => {
   return (
     <a
       href={href}
@@ -16,5 +16,3 @@ const CallToAction = ({ href, title, image }: ICta) => {
     </a>
   );
 };
-
-export default CallToAction;

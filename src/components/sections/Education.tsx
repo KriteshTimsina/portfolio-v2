@@ -1,5 +1,5 @@
 import { BsMortarboard } from "react-icons/bs";
-import Timeline from "../Timeline";
+import { Timeline } from "../shared";
 
 export const Education = () => {
   return (

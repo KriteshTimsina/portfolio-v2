@@ -1,11 +1,7 @@
 import Typewriter from "typewriter-effect";
-import CallToAction from "../CallToAction";
-import Socials from "../Socials";
-
+import { icons, images } from "../../assets";
 import resume from "../../assets/KriteshTimsina-React-Reactnative-developer.pdf";
-import cvicon from "../../assets/cvicon.gif";
-import emailme from "../../assets/emailme.gif";
-import kritesh from "../../assets/kritesh.jpg";
+import { CallToAction, Socials } from "../shared";
 
 export const Landing = () => {
   return (
@@ -29,18 +25,18 @@ export const Landing = () => {
         </div>
         <Socials />
         <div className="flex gap-2">
-          <CallToAction href={resume} title="Download CV" image={cvicon} />
+          <CallToAction href={resume} title="Download CV" image={icons.cv} />
           <CallToAction
             href="mailto:kriteshtimsina55@gmail.com"
             title="Say Hello"
-            image={emailme}
+            image={icons.email}
           />
         </div>
       </section>
       <section className="order-1 sm:order-2">
         <img
           className="w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] rounded-full hover:shadow-md hover:shadow-primary hover:grayscale-[50%] border-primary border-[2px] transition-all duration-75 "
-          src={kritesh}
+          src={images.heroImage}
           title="Kritesh Timsina"
           alt="Kritesh Timsina"
         />

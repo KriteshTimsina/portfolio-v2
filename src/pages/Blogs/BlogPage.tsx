@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Blog } from "./Blogs";
 import dayjs from "dayjs";
-import Loader from "../../components/Loader";
+import Loader from "../../components/shared/Loader";
 import BASE_URL from "../../constants/BASE_URL";
 import SEO from "../../components/SEO";
 

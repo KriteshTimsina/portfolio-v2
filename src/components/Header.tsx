@@ -1,6 +1,7 @@
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { useTheme } from "../hooks/useTheme";
-import logo from "../assets/logo.png";
+import { icons } from "../assets";
+
 const Header = () => {
   const theme = useTheme();
 
@@ -11,7 +12,7 @@ const Header = () => {
         href="/"
         className="  flex gap-1 text-2xl font-bold cursor-pointer scroll-smooth text-primary font-dmsans dark:text-primary  w-[100px] md:w-[150px]"
       >
-        <img src={logo} alt="Kritesh Timsina" width={120} />
+        <img src={icons.logo} alt="Kritesh Timsina" width={120} />
       </a>
       <nav className="cursor-pointer">
         <DarkModeSwitch

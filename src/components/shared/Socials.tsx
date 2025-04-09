@@ -1,6 +1,7 @@
 import { AiFillGithub, AiFillYoutube } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-const Socials = () => {
+
+export const Socials = () => {
   return (
     <div className="flex gap-2 mt-2 text-xl cursor-pointer">
       <a href="https://www.linkedin.com/in/kriteshtimsina/" target="_blank">
@@ -24,5 +25,3 @@ const Socials = () => {
     </div>
   );
 };
-
-export default Socials;

@@ -1,6 +1,6 @@
 import PostCard from "./Components/PostCard";
 import { useEffect, useState } from "react";
-import Loader from "../../components/Loader";
+import Loader from "../../components/shared/Loader";
 import BASE_URL from "../../constants/BASE_URL";
 
 export interface Blog {
