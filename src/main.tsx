@@ -5,7 +5,7 @@ import ThemeProvider from "./contexts/ThemeContext.tsx";
 import { HelmetProvider } from "react-helmet-async";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <HelmetProvider context={{}}>
+  <HelmetProvider>
     <ThemeProvider>
       <App />
     </ThemeProvider>
