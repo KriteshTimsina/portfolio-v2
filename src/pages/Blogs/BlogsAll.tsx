@@ -1,7 +1,7 @@
 import PostCard from "./Components/PostCard";
 import { useEffect, useState } from "react";
-import Loader from "../../components/shared/Loader";
 import BASE_URL from "../../constants/BASE_URL";
+import { Loader } from "../../components/shared";
 
 export interface Blog {
   category: string[];
