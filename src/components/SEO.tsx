@@ -6,11 +6,10 @@ type SEOProps = {
   url?: string;
 };
 
-export default function SEO({
-  title,
-  description,
-  url = typeof window !== "undefined" ? window.location.href : "",
-}: SEOProps) {
+const SEO = ({ title, description, url }: SEOProps) => {
+  const currentUrl =
+    url ?? (typeof window !== "undefined" ? window.location.href : "");
+
   return (
     <Helmet>
       <title>{title}</title>
@@ -23,7 +22,7 @@ export default function SEO({
         property="og:image"
         content={"https://kriteshtimsina.com.np/assets/kritesh-057690bd.jpg"}
       />
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={currentUrl} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content="Kritesh Timsina" />
       <meta name="twitter:site" content="@kritstims" />
@@ -32,4 +31,6 @@ export default function SEO({
       <meta name="twitter:image" content="kriteshtimsina.com" />
     </Helmet>
   );
-}
+};
+
+export default SEO;
