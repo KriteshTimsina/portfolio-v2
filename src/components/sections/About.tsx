@@ -1,4 +1,5 @@
 import { RxInfoCircled } from "react-icons/rx";
+import { details } from "../../constants/data";
 
 export const About = () => {
   return (
@@ -8,11 +9,7 @@ export const About = () => {
         <h1>About</h1>
       </section>
       <section className="px-5 text-typography">
-        <p className="mb-3 selection:bg-yellow-300">
-          Front-end developer with a knack for crafting clean, user-friendly
-          interfaces, optimizing performance, and enhancing user experiences
-          across web and mobile applications.
-        </p>
+        <p className="mb-3 selection:bg-yellow-300">{details.introduction}</p>
       </section>
     </div>
   );
