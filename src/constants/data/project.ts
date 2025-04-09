@@ -1,4 +1,4 @@
-import { images } from "../assets";
+import { images } from "../../assets";
 
 type IProjects = {
   id: number;
@@ -12,7 +12,7 @@ type IProjects = {
   category: string;
 }[];
 
-export const projectsData: IProjects = [
+export const projects: IProjects = [
   {
     id: 1,
     icon: "📸",

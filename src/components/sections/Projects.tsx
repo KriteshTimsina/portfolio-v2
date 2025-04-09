@@ -1,9 +1,9 @@
 import { BsListTask } from "react-icons/bs";
-import { projectsData as projects } from "../utils/projectsData";
 import { AiFillGithub } from "react-icons/ai";
 import { FiExternalLink } from "react-icons/fi";
+import { projects } from "../../constants/data";
 
-const ProjectPage = () => {
+export const Projects = () => {
   return (
     <div className="flex flex-col gap-6 mt-10">
       <section className="flex gap-2 items-center text-3xl">
@@ -84,5 +84,3 @@ const ProjectPage = () => {
     </div>
   );
 };
-
-export default ProjectPage;
