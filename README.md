@@ -57,7 +57,8 @@ Your site will be running at `http://localhost:5173`.
 
 ## 📝 How to Customize the Website
 
-All content is editable through simple constant files — no coding skills required!
+All content is editable through simple constant files — no coding skills required!.
+All the icons are available at https://react-icons.github.io/react-icons/
 
 Navigate to:
 
@@ -80,6 +81,14 @@ export const details = {
   roles: ["Role 1", "Role 2"],
   introduction: `Short intro about yourself.`,
   email: "your@email.com",
+  socials: [ {
+      title: "Linkedin",
+      href: "https://www.linkedin.com/in/your-link/",
+      icon: FaLinkedinIn,
+      color: "#0077b5",
+    },
+    ...
+    ]
 };
 ```
 
@@ -147,7 +156,7 @@ Make sure your images are available inside the `/assets` folder and imported pro
 
 ---
 
-## 🖼️ How to Change Project Images, Logo & Hero Image
+## 🖼️ How to Change Project Images, Logo & Hero Image & Resume
 
 All images and icons used in the website are located in:
 
@@ -215,6 +224,18 @@ export const images = {
 ```
 
 Then, use `images.newProject` in your project object inside `projects.ts`.
+
+### 💡 Adding your resume
+
+Import your resume in pdf format inside assets
+
+```ts
+
+//Landing.tsx
+import resume from "../../assets/your-resume-name.pdf"
+
+...
+```
 
 ## 📁 Folder Structure Overview
 
