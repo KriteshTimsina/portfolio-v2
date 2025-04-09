@@ -10,7 +10,7 @@ export const Skills = () => {
       </section>
       <section className="flex flex-wrap gap-2 justify-start items-center px-5 cursor-pointer">
         {skills.map(({ icon: Icon, color, title }) => {
-          return <Icon color={color} title={title} size={50} />;
+          return <Icon key={title} color={color} title={title} size={50} />;
         })}
       </section>
     </div>

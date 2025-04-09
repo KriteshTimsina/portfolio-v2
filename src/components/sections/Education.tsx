@@ -1,5 +1,6 @@
 import { BsMortarboard } from "react-icons/bs";
 import { Timeline } from "../shared";
+import { education } from "../../constants/data";
 
 export const Education = () => {
   return (
@@ -9,31 +10,24 @@ export const Education = () => {
         <h1>Education</h1>
       </section>
       <section className="flex gap-10 px-5">
-        <Timeline size={2} />
+        <Timeline size={education.length} />
         <div className="flex flex-col gap-5">
-          <div>
-            <h1 className="text-sm text-typography">2018-2022</h1>
-            <div>
-              <h1 className="font-semibold">Bachelor's Degree</h1>
-              <p className="text-sm font-semibold text-typography">
-                Bachelor in Science in Computer Science and Information
-                Technology (B.Sc. CSIT)
-              </p>
-              <p className="text-sm text-typography">
-                Mechi Multiple Campus{"(TU)"}
-              </p>
-            </div>
-          </div>
-          <div>
-            <h1 className="text-sm text-typography">2016-2018</h1>
-            <div>
-              <h1 className="font-semibold">Academic Degree</h1>
-              <p className="text-sm font-semibold text-typography">
-                +2 Science
-              </p>
-              <p className="text-sm text-typography">Kanchanjunga H.S.E.S</p>
-            </div>
-          </div>
+          {education.map((item) => {
+            return (
+              <div key={item.degree}>
+                <h1 className="text-sm text-typography">
+                  {item.startDate}-{item.endDate}
+                </h1>
+                <div>
+                  <h1 className="font-semibold">{item.degree}</h1>
+                  <p className="text-sm font-semibold text-typography">
+                    {item.course}
+                  </p>
+                  <p className="text-sm text-typography">{item.institution}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
     </div>

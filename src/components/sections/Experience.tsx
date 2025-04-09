@@ -1,5 +1,6 @@
 import { MdWorkOutline } from "react-icons/md";
 import { Timeline } from "../shared";
+import { experiences } from "../../constants/data";
 
 export const Experience = () => {
   return (
@@ -9,29 +10,24 @@ export const Experience = () => {
         <h1>Experience</h1>
       </section>
       <section className="flex gap-10 px-5">
-        <Timeline size={2} />
+        <Timeline size={experiences.length} />
         <div className="flex flex-col gap-5">
-          <div>
-            <h1 className="text-sm text-typography">November 2023 - Present</h1>
-            <div>
-              <h1 className="font-semibold">Associate Programmer</h1>
-              <p className="text-sm text-typography">
-                Mantra IT Solution, Jwagal, Kathmandu
-              </p>
-            </div>
-            <br />
-          </div>
-          <div>
-            <h1 className="text-sm text-typography">
-              July 2023 - October 2023
-            </h1>
-            <div>
-              <h1 className="font-semibold">Intern</h1>
-              <p className="text-sm text-typography">
-                Mantra IT Solution, Jwagal, Kathmandu
-              </p>
-            </div>
-          </div>
+          {experiences.map((experience, index) => {
+            return (
+              <div key={index}>
+                <h1 className="text-sm text-typography">
+                  {experience.startDate} - {experience.endDate}
+                </h1>
+                <div>
+                  <h1 className="font-semibold">{experience.designation}</h1>
+                  <p className="text-sm text-typography">
+                    {experience.company}, {experience.address}
+                  </p>
+                </div>
+                <br />
+              </div>
+            );
+          })}
         </div>
       </section>
     </div>
