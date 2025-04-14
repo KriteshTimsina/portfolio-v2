@@ -5,6 +5,7 @@ import {
   Skills,
   About,
   Projects,
+  Blogs,
 } from "../components/sections";
 
 export default function Main() {
@@ -16,6 +17,7 @@ export default function Main() {
       <Experience />
       <Skills />
       <Projects />
+      <Blogs />
     </div>
   );
 }

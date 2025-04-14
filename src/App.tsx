@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useTheme } from "./hooks/useTheme";
 import Header from "./components/Header";
-import { Main, NotFound } from "./pages";
+import { Main, NotFound, Blogs, BlogSingle } from "./pages";
 
 function App() {
   const theme = useTheme();
@@ -13,6 +13,8 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Main />} />
+            <Route path="/blog" element={<Blogs />} />
+            <Route path="/blog/:slug" element={<BlogSingle />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
