@@ -1,6 +1,6 @@
 import Typewriter from "typewriter-effect";
 import { icons, images } from "../../assets";
-import resume from "../../assets/KriteshTimsina-React-Reactnative-developer.pdf";
+import resume from "../../assets/Kritesh-Timsina-Frontend-Developer.pdf";
 import { CallToAction, Socials } from "../shared";
 import { details } from "../../constants/data";
 

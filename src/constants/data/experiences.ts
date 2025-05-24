@@ -9,8 +9,8 @@ interface IExperience {
 export const experiences: IExperience[] = [
   {
     startDate: "November 2023",
-    endDate: "Present",
-    designation: "Associate Programmer",
+    endDate: "May 2025",
+    designation: "Frontend Developer",
     company: "Mantra IT Solution Pvt. Ltd.",
     address: "Jwagal, Kathmandu",
   },

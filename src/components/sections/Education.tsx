@@ -20,9 +20,6 @@ export const Education = () => {
                 </h1>
                 <div>
                   <h1 className="font-semibold">{item.degree}</h1>
-                  <p className="text-sm font-semibold text-typography">
-                    {item.course}
-                  </p>
                   <p className="text-sm text-typography">{item.institution}</p>
                 </div>
               </div>
