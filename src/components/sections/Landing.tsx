@@ -1,12 +1,12 @@
 import Typewriter from "typewriter-effect";
 import { icons, images } from "../../assets";
-import resume from "../../assets/Kritesh-Timsina-Frontend-Developer.pdf";
+import resume from "../../assets/Kritesh_Timsina_Resume.pdf";
 import { CallToAction, Socials } from "../shared";
 import { details } from "../../constants/data";
 
 export const Landing = () => {
   return (
-    <div className="flex flex-col gap-3 justify-between items-start sm:flex-row sm:items-center">
+    <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
       <section className="flex flex-col order-2 gap-1 px-5 sm:order-1">
         <h1 className="">Namaste, I'm</h1>
         <h1 className="text-3xl font-extrabold">
