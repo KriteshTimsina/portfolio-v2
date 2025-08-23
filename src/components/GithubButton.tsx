@@ -1,4 +1,4 @@
-import { FaRegStar, FaStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 
 import { icons } from "../assets/icons";
 import { Link } from "react-router-dom";
@@ -12,7 +12,7 @@ interface GitHubAPIResponse {
   stargazers_count: number;
 }
 
-const GithubButton = ({ repo }: GitHubStarButtonProps) => {
+const GithubButton = memo(({ repo }: GitHubStarButtonProps) => {
   const [stars, setStars] = useState<number>(0);
   const [animatedStars, setAnimatedStars] = useState<number>(0);
   const requestRef = useRef<number>();
@@ -78,6 +78,6 @@ const GithubButton = ({ repo }: GitHubStarButtonProps) => {
       </Link>
     </div>
   );
-};
+});
 
-export default memo(GithubButton);
+export default GithubButton;
