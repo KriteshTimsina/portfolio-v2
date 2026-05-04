@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useTheme } from "./hooks/useTheme";
 import Header from "./components/Header";
 import { Main, NotFound } from "./pages";
-import GithubButton from "./components/GithubButton";
 
 function App() {
   const theme = useTheme();
@@ -16,7 +15,6 @@ function App() {
             <Route path="/" element={<Main />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-          <GithubButton repo="kriteshtimsina/portfolio-v2" />
         </BrowserRouter>
       </div>
     </div>

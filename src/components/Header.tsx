@@ -17,9 +17,9 @@ const Header = () => {
       </a>
       <nav className="cursor-pointer">
         <ul className="flex gap-5 text-lg font-semibold text-primary dark:text-primary">
-          <li>
+          {/*<li>
             <Link to="https://blogs.kriteshtimsina.com.np">Read my blogs</Link>
-          </li>
+          </li>*/}
           <DarkModeSwitch
             className="text-primary"
             checked={theme.isDarkTheme}
