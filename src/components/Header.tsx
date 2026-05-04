@@ -1,7 +1,6 @@
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { useTheme } from "../hooks/useTheme";
 import { icons } from "../assets";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const theme = useTheme();
